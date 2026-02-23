@@ -27,13 +27,33 @@ nav ul {
   gap: 20px;
 }
 
-nav a {
+nav button {
+  background: none;
+  border: none;
   color: white;
-  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 6px;
 }
 
-nav a:hover {
-  color: #38bdf8;
+/* Hover */
+nav button:hover {
+  background: #38bdf8;
+  color: #020617;
+}
+
+/* Focus clavier (accessibilité) */
+nav button:focus {
+  outline: 2px solid #38bdf8;
+  outline-offset: 2px;
+}
+
+/* Optionnel : bouton actif */
+nav button.active {
+  background: #38bdf8;
+  color: #020617;
 }
 
 .section {
