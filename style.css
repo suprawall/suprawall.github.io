@@ -123,3 +123,11 @@ footer {
   padding: 20px;
   background: #111827;
 }
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}

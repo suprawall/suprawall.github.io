@@ -10,25 +10,24 @@
 
   <!-- NAVBAR -->
   <nav>
-    <h2>Valentin Hesters</h2>
-    <ul>
-      <li><a href="#home">Accueil</a></li>
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Certifications</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#sport">Sports</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <h2>Nom Prenom</h2>
+  <ul>
+    <li><a href="#" onclick="showSection('home')">Accueil</a></li>
+    <li><a href="#" onclick="showSection('about')">À propos</a></li>
+    <li><a href="#" onclick="showSection('skills')">Compétences</a></li>
+    <li><a href="#" onclick="showSection('projects')">Projets</a></li>
+    <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+  </ul>
+</nav>
 
   <!-- HOME -->
-  <section id="home" class="section hero">
+  <section id="home" class="section page active">
     <h1><span>Valentin Hesters</span></h1>
     <p>Ingénieur ia / Data scientist</p>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="section">
+  <section id="about" class="section page">
     <h2>À propos</h2>
     <p>
       Je suis un jeune diplomé en informatique de l'Université Paris-Saclay.
@@ -37,7 +36,7 @@
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section">
+  <section id="skills" class="section page">
   <h2>Compétences</h2>
 
   <div class="skillset">
@@ -61,7 +60,7 @@
 </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="section">
+  <section id="projects" class="section page">
     <h2>Mes Projets</h2>
     <div class="projects-container">
       <div class="project-card">
@@ -84,14 +83,14 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
-   <section id="sport" class="section">
+  <!-- SPORT -->
+   <section id="sport" class="section page">
     <h2>sport</h2>
     <p>Résultats Athlétisme</p>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section">
+  <section id="contact" class="section page">
     <h2>Contact</h2>
     <p>Email : tonemail@email.com</p>
     <p>LinkedIn : linkedin.com/in/tonprofil</p>
@@ -100,6 +99,17 @@
   <footer>
     <p>© 2026 Nom Prenom - Tous droits réservés</p>
   </footer>
+
+<script>
+  function showSection(sectionId) {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => {
+      page.classList.remove('active');
+    });
+
+    document.getElementById(sectionId).classList.add('active');
+  }
+</script>
 
 </body>
 </html>
