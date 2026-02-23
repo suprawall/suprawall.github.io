@@ -41,17 +41,6 @@ nav a:hover {
   text-align: center;
 }
 
-.hero {
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.hero span {
-  color: #38bdf8;
-}
-
 .btn {
   display: inline-block;
   margin-top: 20px;
