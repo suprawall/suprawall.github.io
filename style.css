@@ -108,6 +108,25 @@ nav button.active {
   transform: translateY(-3px);
 }
 
+.results-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.results {
+  background: #1f2937;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.link-results {
+  text-decoration: none;
+  color: white;
+}
+
 .projects-container {
   display: flex;
   gap: 20px;
