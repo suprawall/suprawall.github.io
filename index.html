@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio</title>
+  <title>Hesters Valentin Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav>
-  <h2>Nom Prenom</h2>
+  <h2>Valentin Hesters</h2>
   <ul>
     <li><a href="#" onclick="showSection('home')">Accueil</a></li>
     <li><a href="#" onclick="showSection('about')">À propos</a></li>
@@ -97,18 +97,24 @@
   </section>
 
   <footer>
-    <p>© 2026 Nom Prenom - Tous droits réservés</p>
+    <p>© 2026 Hesters Valentin - Tous droits réservés</p>
   </footer>
 
 <script>
-  function showSection(sectionId) {
-    const pages = document.querySelectorAll('.page');
-    pages.forEach(page => {
-      page.classList.remove('active');
-    });
+document.addEventListener("DOMContentLoaded", function () {
 
-    document.getElementById(sectionId).classList.add('active');
+  function showSection(sectionId) {
+    const pages = document.querySelectorAll(".page");
+    pages.forEach(page => page.classList.remove("active"));
+
+    const activePage = document.getElementById(sectionId);
+    if (activePage) {
+      activePage.classList.add("active");
+    }
   }
+
+  window.showSection = showSection;
+});
 </script>
 
 </body>
